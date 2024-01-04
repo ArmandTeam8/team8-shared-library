@@ -4,7 +4,7 @@ def call(String repoUrl){
        stages {
            stage("Tools initialization") {
                steps {
-                   sh 'logname'
+                   echo 'we are practising'
                    sh 'java -version'
                }
            }
@@ -16,7 +16,7 @@ def call(String repoUrl){
            }
            stage("to-test-maven") {
                steps {
-                   sh 'whoami'
+                   sh 'lsblk'
                }
            }
        }
